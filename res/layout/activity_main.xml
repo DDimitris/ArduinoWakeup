@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@drawable/arduino" >
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LocalRadioButton"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true" >
+
+        <RadioButton
+            android:id="@+id/RemoteRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="Remote" />
+
+        <RadioButton
+            android:id="@+id/LocalRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RemoteRadioButton"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:gravity="center_vertical|left|start"
+            android:text="Local" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/WakeUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="27dp"
+        android:text="WakeUp" />
+
+    <Button
+        android:id="@+id/ShutDownButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/WakeUpButton"
+        android:layout_alignBottom="@+id/WakeUpButton"
+        android:layout_centerHorizontal="true"
+        android:text="Emergency ShutDown" />
+
+    <Button
+        android:id="@+id/ExitAppButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ShutDownButton"
+        android:layout_alignBottom="@+id/ShutDownButton"
+        android:layout_alignParentRight="true"
+        android:text="ExitApp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Copyright © DDedousis 2012"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
+   
