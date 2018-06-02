@@ -1,0 +1,4 @@
+.idea
+*.properties
+*.bat
+ArduinoWakeup/build
